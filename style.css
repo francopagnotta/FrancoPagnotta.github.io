@@ -280,7 +280,7 @@ h3 {font-size: var(--fontsize-h3);}
 /* MY TECNOLOGIES SECTION */
 .my__tecnologies {
     background: var(--color-dark);
-    background-image: url(/img/sevices_background_img.jpg);
+    background-image: url(/img/my-tecnologies-background.jpg);
     background-size: cover;
     background-blend-mode:multiply;
     color: var(--color-light);

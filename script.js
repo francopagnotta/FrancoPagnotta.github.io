@@ -21,7 +21,7 @@ navLinks.forEach(link => {
 // GO UP BUTTON
 goUp.addEventListener('mouseover', (e)=> {
     
-    newElement.innerHTML = 'go <br> up!';
+    newElement.innerHTML = 'up!';
     newElement.classList.add('go-up')
     goUp.replaceChild(newElement,oldElement);
     goUp.removeChild(oldElement);
