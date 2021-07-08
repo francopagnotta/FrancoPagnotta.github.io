@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Sans+Pro:wght@300;400;900&display=swap" rel="stylesheet">
+    <title>DevFrank Portfolio Website</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="logo">
+            <img src="https://francopagnotta.github.io/my_portfolio_website/img/template.png" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list__item"><a href="#home" class="nav__list__item--link">Home</a></li>
+                <li class="nav__list__item"><a href="#tecnologies" class="nav__list__item--link">My Skillset</a></li>
+                <li class="nav__list__item"><a href="#about" class="nav__list__item--link">About Me</a></li>
+                <li class="nav__list__item"><a href="#work" class="nav__list__item--link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Intro -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Franco Pagnotta</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Front-end dev</p>
+        <img src="https://francopagnotta.github.io/my_portfolio_website/img/foto perfil - copia.jpg" alt="a picture of Franco Pagnotta" class="intro__img">
+    </section>
+
+    <!--Tecnologies-->
+    <section class="my__tecnologies" id="tecnologies">
+        <h2 class="section__title section__title--tecnologies">My skillset</h2>
+        <div class="tecnologies-grid">
+            <!--tecnology item 01-->
+            <a href="#" class="tecnologies__item">
+                <i class="fab fa-html5 tecnologies__item--html"></i>
+            </a>
+            
+            <!--tecnology item 02-->
+            <a href="#" class="tecnologies__item tecnologies__item--css">
+                <i class="fab fa-css3-alt"></i>
+            </a>
+            
+            <!--tecnology item 03-->
+            <a href="#" class="tecnologies__item tecnologies__item--js">
+                <i class="fab fa-js"></i>
+            </a>
+
+            <!--tecnology item 04-->
+            <a href="#" class="tecnologies__item tecnologies__item--git">
+                <i class="fab fa-git-alt"></i>
+            </a>
+        </div>
+         <div class="main-center">
+            <div class="button-center">
+                <a href="#work" class="btn">see my work!</a>
+                <div class="d1"></div>
+                <div class="d2"></div>
+                <div class="d3"></div>
+                <div class="d4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--About Me-->    
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">
+            front-end dev jr in Buenos Aires, Argentina
+        </p>
+        
+        <div class="about-me__body">
+            <p>
+                I am 25 years old, I am from Argentina and I started studying programming in 2020. 
+                <br>
+                <br>
+                I started my learning path with programming basics by studying on my own through websites like EdTeam, 
+                KhanAcademy, freecodecamp, MDN, W3C, YouTube, and a few more.
+            </p>
+                <br>
+            <p>
+                Nowadays web development became a passion for me, I am completely self-taught 
+                and my learning roadmap is based on becoming an expert in javascript and its entire ecosystem.
+            </p>
+        </div>
+        <img src="/img/descontracturado.jpg" alt="an other picture about me" class="about-me__img">
+    </section>
+
+    <!--My Work-->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My Work</h2>
+        <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+<!--Porfolio item 01-->
+        <div class="portfolio">
+            <a href="#" class="portfolio__item">
+                <img src="/img/img1.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!--Porfolio item 02-->
+            <a href="#" class="portfolio__item">
+                <img src="/img/img2.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!--Porfolio item 03-->
+            <a href="#" class="portfolio__item">
+                <img src="/img/img3.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!--Porfolio item 04-->
+            <a href="#" class="portfolio__item">
+                <img src="/img/img4.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!--Porfolio item 05-->
+            <a href="#" class="portfolio__item">
+                <img src="/img/img5.jpg" alt="" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="footer">
+        <a href="mail@gmail.com" class="footer__link">francoapagnotta@gmail.com</a>
+        <ul class="social-list">
+            <!--linkedin-->
+            <li class="social-list__item">
+                <a href="https://www.linkedin.com/in/franco-adri%C3%A1n-pagnotta-5543091b1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BeGOv7gBySPa0r6etr6%2BdmA%3D%3D" class="social-list__link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            
+            <!--github-->
+            <li class="social-list__item">
+                <a href="https://github.com/FrancoPagnotta" class="social-list__link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            
+            <!--stackoverflow-->
+            <li class="social-list__item">
+                <a href="https://stackoverflow.com/users/16345258/franco-pagnotta" class="social-list__link">
+                    <i class="fab fa-stack-overflow"></i>
+                </a>
+            </li>
+            
+            <!--instagram-->
+            <li class="social-list__item">
+                <a href="" class="social-list__link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            
+            <!--go up-->
+            <ul class="social-list2">
+                <li class="social-list__item">
+                    <a href="#header" class="social-list__link__go-up">
+                        <i class="fas fa-arrow-circle-up i"></i>
+                        <p class="text"></p>
+                    </a>
+                </li>
+            </ul>
+        </ul>
+    </footer>
+	<script src="script.js"></script>
+</body>
+</html>
