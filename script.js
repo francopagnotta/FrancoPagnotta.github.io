@@ -1,8 +1,8 @@
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav__list__item--link');
 const goUp = document.querySelector('.social-list__link__go-up');
-const viejo = document.querySelector('.i')
-const nuevo = document.querySelector('.text');
+const oldElement = document.querySelector('.old-element')
+const newElement = document.querySelector('.new-element');
 
 
 // NAV BAR
@@ -21,16 +21,16 @@ navLinks.forEach(link => {
 // GO UP BUTTON
 goUp.addEventListener('mouseover', (e)=> {
     
-    nuevo.innerHTML = 'go <br> up!';
-    nuevo.classList.add('goup')
-    goUp.replaceChild(nuevo,viejo);
-    goUp.removeChild(viejo);
+    newElement.innerHTML = 'go <br> up!';
+    newElement.classList.add('go-up')
+    goUp.replaceChild(newElement,oldElement);
+    goUp.removeChild(oldElement);
 });
 
 
 goUp.addEventListener('mouseout', (e)=> {
-    nuevo.innerHTML = '';
-    goUp.replaceChild(viejo,nuevo);
-    goUp.removeChild(nuevo);
+    newElement.innerHTML = '';
+    goUp.replaceChild(oldElement,newElement);
+    goUp.removeChild(newElement);
     
 });
