@@ -17,10 +17,11 @@ navLinks.forEach(link => {
 // GO UP BUTTON
 const goUp = document.querySelector('.social-list__link__go-up');
 const primerHijo = document.querySelector('.primerHijo');
+const header = document.querySelector('.header');
 
 const segundoHijo = document.createElement("A");
-segundoHijo.classList.add("social-list__link__go-up");
-segundoHijo.setAttribute("href","#header");
+segundoHijo.classList.add("segundohijo");
+segundoHijo.setAttribute("href",header);
 segundoHijo.innerHTML = "up!";
 
 goUp.addEventListener('mouseover', (e)=> {
