@@ -29,6 +29,12 @@ myButton.addEventListener('click',(e)=> {
     window.scrollTo({
         top:0,
         behavior:'smooth'
-    })
-})
+    });
+});
 
+myButton.addEventListener('touch',(e)=> {
+    window.scrollTo({
+        top:0,
+        behavior:'smooth'
+    });
+});
