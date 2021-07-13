@@ -14,26 +14,21 @@ navLinks.forEach(link => {
 
 
 
-// GO UP BUTTON
-const goUp = document.querySelector('.social-list__link__go-up');
-const primerHijo = document.querySelector('.primerHijo');
-const header = document.querySelector('.header');
+// BACK TO TOP  BUTTON
+const myButton = document.querySelector('.myBtn');
 
-const segundoHijo = document.createElement("A");
-segundoHijo.classList.add("segundohijo");
-segundoHijo.setAttribute("href",header);
-segundoHijo.innerHTML = "up!";
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) { // ----> document.body for safari and document.documentElement for Chrome and firefox
+        myButton.classList.add('show');
+    } else {
+        myButton.classList.remove('show');
+    }
+};
 
-goUp.addEventListener('mouseover', (e)=> {
-    primerHijo.classList.remove("fas");
-    primerHijo.classList.remove("fa-arrow-circle-up");
-    primerHijo.classList.remove("primerHijo");
-    goUp.appendChild(segundoHijo)
-});
+myButton.addEventListener('click',(e)=> {
+    window.scrollTo({
+        top:0,
+        behavior:'smooth'
+    })
+})
 
-goUp.addEventListener('mouseout', (e)=> {
-    goUp.removeChild(segundoHijo);
-    primerHijo.classList.add("fas");
-    primerHijo.classList.add("fa-arrow-circle-up");
-    primerHijo.classList.add("primerHijo");
-});

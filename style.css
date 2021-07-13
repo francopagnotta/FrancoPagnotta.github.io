@@ -603,14 +603,34 @@ h3 {font-size: var(--fontsize-h3);}
     opacity: .7;
 }
 
-.social-list__link__go-up {
-    text-decoration: none;
-    font-family: var(--ff-secondary);
-    font-weight: var(--fw-bold);
+
+/* BUTTON BACK TO TOP */
+.myBtn {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:2em;
+    height:2em;
+    background: #000;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    font-size: var(--fontsize-h3);
+    position: fixed;
+    bottom: 1em;
+    right: .5em;
+    cursor: pointer;
+    z-index: -1;
+    transform: scale(0);
+    opacity: .7;
 }
 
-.go-up:hover {
-    opacity: .7; 
+.myBtn i {
+    color: var(--color-accent);
 }
 
-
+.show {
+    z-index: 999;
+    transform: scale(1);
+    transition: all 500ms ease;
+}
