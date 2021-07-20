@@ -582,12 +582,12 @@ h3 {font-size: var(--fontsize-h3);}
     height: 100%;
     transition: transform 500ms cubic-bezier(.5,0,.5,1);
     opacity: 250ms linear;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity:.75;
 }
 
