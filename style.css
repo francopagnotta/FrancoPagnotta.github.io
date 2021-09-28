@@ -324,6 +324,20 @@ h3 {font-size: var(--fontsize-h3);}
     color: #f0db4f;
 }
 
+.tecnologies__item--react {
+    color: #61dafb;
+    animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+
 .tecnologies__item--git {
     color: #f34f29;
 }
